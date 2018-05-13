@@ -12519,6 +12519,10 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <part name="P+16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="DISPLAY1" library="PK-7SegmentIndicator" deviceset="7SEGS-4DIGITS" device=""/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="33"/>
+<part name="CN1" library="pls" deviceset="PBS-2-VERTICAL" device=""/>
+<part name="CN2" library="pls" deviceset="PBS-2-VERTICAL" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12603,6 +12607,10 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <instance part="P+16" gate="VCC" x="-96.52" y="38.1"/>
 <instance part="DISPLAY1" gate="G$1" x="-182.88" y="-40.64"/>
 <instance part="R1" gate="G$1" x="-109.22" y="-40.64"/>
+<instance part="CN1" gate="G$1" x="106.68" y="91.44" rot="R180"/>
+<instance part="CN2" gate="G$1" x="106.68" y="78.74" rot="R180"/>
+<instance part="GND4" gate="1" x="99.06" y="76.2"/>
+<instance part="GND5" gate="1" x="101.6" y="101.6" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -12767,6 +12775,16 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <pinref part="GND22" gate="1" pin="GND"/>
 <wire x1="-50.8" y1="96.52" x2="-48.26" y2="96.52" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="CN2" gate="G$1" pin="1"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="99.06" y1="78.74" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CN1" gate="G$1" pin="2"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="101.6" y1="99.06" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SER" class="0">
 <segment>
@@ -12877,9 +12895,9 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="PD4(HS)/UART1_CK/TIM2_CH1/BEEP"/>
-<wire x1="63.5" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="101.6" x2="76.2" y2="96.52" width="0.1524" layer="91"/>
-<label x="76.2" y="96.52" size="1.778" layer="95" xref="yes"/>
+<wire x1="63.5" y1="101.6" x2="73.66" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="101.6" x2="73.66" y2="104.14" width="0.1524" layer="91"/>
+<label x="73.66" y="104.14" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BTN_LEFT" class="0">
@@ -12921,9 +12939,8 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <label x="132.08" y="0" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<wire x1="63.5" y1="88.9" x2="76.2" y2="88.9" width="0.1524" layer="91"/>
-<label x="76.2" y="88.9" size="1.778" layer="95" xref="yes"/>
-<pinref part="IC3" gate="G$1" pin="PA3(HS)/TIM2_CH3/[SPI_NSS]"/>
+<wire x1="63.5" y1="99.06" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
+<label x="68.58" y="99.06" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BTN_BOTTOM" class="0">
@@ -12935,8 +12952,9 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <label x="127" y="-25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="63.5" y1="104.14" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
-<label x="76.2" y="104.14" size="1.778" layer="95" xref="yes"/>
+<wire x1="63.5" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="104.14" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
+<label x="71.12" y="109.22" size="1.778" layer="95" xref="yes"/>
 <pinref part="IC3" gate="G$1" pin="PD3(HS)/AIN4/TIM2_CH2/ADC_ETR"/>
 </segment>
 </net>
@@ -12949,10 +12967,10 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <label x="132.08" y="25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="76.2" y="109.22" size="1.778" layer="95" xref="yes"/>
+<label x="68.58" y="114.3" size="1.778" layer="95" xref="yes"/>
 <pinref part="IC3" gate="G$1" pin="PD2(HS)/AIN3/[TIM2_CH3]"/>
-<wire x1="63.5" y1="106.68" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="106.68" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="106.68" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -13242,6 +13260,23 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <wire x1="-17.78" y1="121.92" x2="17.78" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="CN5" gate="G$1" pin="3"/>
 <wire x1="17.78" y1="121.92" x2="17.78" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="PD6(HS)/UART1_RX/AIN6"/>
+<wire x1="63.5" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="96.52" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="CN1" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="91.44" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="PA3(HS)/TIM2_CH3/[SPI_NSS]"/>
+<wire x1="63.5" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="CN2" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="88.9" x2="101.6" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

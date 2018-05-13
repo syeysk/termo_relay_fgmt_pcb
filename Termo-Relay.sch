@@ -12512,7 +12512,7 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <part name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="14p"/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="Q2" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49GW" package3d_urn="urn:adsk.eagle:package:12072/1" value="20M"/>
+<part name="Q2" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49GW" package3d_urn="urn:adsk.eagle:package:12072/1" value="16M"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -12523,6 +12523,13 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <part name="CN2" library="pls" deviceset="PBS-2-VERTICAL" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0.1u"/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="470-3300n"/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="1u"/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12611,6 +12618,13 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <instance part="CN2" gate="G$1" x="106.68" y="78.74" rot="R180"/>
 <instance part="GND4" gate="1" x="99.06" y="76.2"/>
 <instance part="GND5" gate="1" x="101.6" y="101.6" rot="R180"/>
+<instance part="C1" gate="G$1" x="-22.86" y="121.92" rot="R90"/>
+<instance part="GND6" gate="1" x="-30.48" y="121.92" rot="R270"/>
+<instance part="C2" gate="G$1" x="-20.32" y="76.2" rot="R180"/>
+<instance part="GND7" gate="1" x="-20.32" y="68.58"/>
+<instance part="C5" gate="G$1" x="-40.64" y="-50.8" rot="R270"/>
+<instance part="GND14" gate="1" x="-33.02" y="-50.8" rot="R90"/>
+<instance part="P+17" gate="VCC" x="-50.8" y="-50.8" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -12696,6 +12710,11 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <pinref part="T1" gate="G$1" pin="C"/>
 <pinref part="P+16" gate="VCC" pin="VCC"/>
 <wire x1="-96.52" y1="35.56" x2="-96.52" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="P+17" gate="VCC" pin="VCC"/>
+<wire x1="-48.26" y1="-50.8" x2="-45.72" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -12784,6 +12803,21 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <pinref part="CN1" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="101.6" y1="99.06" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="-27.94" y1="121.92" x2="-25.4" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="-20.32" y1="71.12" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="-35.56" y1="-50.8" x2="-38.1" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SER" class="0">
@@ -13260,6 +13294,8 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <wire x1="-17.78" y1="121.92" x2="17.78" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="CN5" gate="G$1" pin="3"/>
 <wire x1="17.78" y1="121.92" x2="17.78" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<junction x="-17.78" y="121.92"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -13277,6 +13313,13 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <wire x1="63.5" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="CN2" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="88.9" x2="101.6" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="VCAP"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="-20.32" y1="81.28" x2="-15.24" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

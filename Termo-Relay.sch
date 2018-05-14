@@ -12844,9 +12844,9 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <label x="-55.88" y="-35.56" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="PC6(HS)/SPI_MOSI/[TIM1_CH1]"/>
-<wire x1="63.5" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
-<label x="73.66" y="60.96" size="1.778" layer="95" xref="yes"/>
+<pinref part="IC3" gate="G$1" pin="PC5(HS)/SPI_SCK/[TIM2_CH1]"/>
+<wire x1="63.5" y1="63.5" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
+<label x="66.04" y="63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RCK" class="0">
@@ -12861,9 +12861,9 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <label x="-55.88" y="-27.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="PC5(HS)/SPI_SCK/[TIM2_CH1]"/>
-<wire x1="63.5" y1="63.5" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
-<label x="66.04" y="63.5" size="1.778" layer="95" xref="yes"/>
+<pinref part="IC3" gate="G$1" pin="PC6(HS)/SPI_MOSI/[TIM1_CH1]"/>
+<wire x1="63.5" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
+<label x="73.66" y="60.96" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$10" class="0">

@@ -12943,9 +12943,10 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <label x="106.68" y="0" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<wire x1="63.5" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
-<label x="76.2" y="66.04" size="1.778" layer="95" xref="yes"/>
-<pinref part="IC3" gate="G$1" pin="PC4(HS)/TIM1_CH4/CLK_CCO/AIN2/[TIM1_CH2N]"/>
+<label x="68.58" y="114.3" size="1.778" layer="95" xref="yes"/>
+<pinref part="IC3" gate="G$1" pin="PD2(HS)/AIN3/[TIM2_CH3]"/>
+<wire x1="63.5" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="106.68" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BTN_RIGHT" class="0">
@@ -12975,6 +12976,7 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <segment>
 <wire x1="63.5" y1="99.06" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
 <label x="68.58" y="99.06" size="1.778" layer="95" xref="yes"/>
+<pinref part="IC3" gate="G$1" pin="PD5(HS)/UART1_TX/AIN5"/>
 </segment>
 </net>
 <net name="BTN_BOTTOM" class="0">
@@ -12986,10 +12988,9 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <label x="127" y="-25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="63.5" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="104.14" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
-<label x="71.12" y="109.22" size="1.778" layer="95" xref="yes"/>
-<pinref part="IC3" gate="G$1" pin="PD3(HS)/AIN4/TIM2_CH2/ADC_ETR"/>
+<wire x1="63.5" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
+<label x="76.2" y="66.04" size="1.778" layer="95" xref="yes"/>
+<pinref part="IC3" gate="G$1" pin="PC4(HS)/TIM1_CH4/CLK_CCO/AIN2/[TIM1_CH2N]"/>
 </segment>
 </net>
 <net name="BTN_TOP" class="0">
@@ -13001,10 +13002,10 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <label x="132.08" y="25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="68.58" y="114.3" size="1.778" layer="95" xref="yes"/>
-<pinref part="IC3" gate="G$1" pin="PD2(HS)/AIN3/[TIM2_CH3]"/>
-<wire x1="63.5" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="106.68" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="104.14" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
+<label x="71.12" y="109.22" size="1.778" layer="95" xref="yes"/>
+<pinref part="IC3" gate="G$1" pin="PD3(HS)/AIN4/TIM2_CH2/ADC_ETR"/>
 </segment>
 </net>
 <net name="N$6" class="0">

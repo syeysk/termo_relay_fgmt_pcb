@@ -12369,7 +12369,6 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <wire x1="7.015" y1="13.75" x2="7.015" y2="-16.51" width="0.127" layer="21"/>
 <wire x1="7.015" y1="-16.51" x2="-6.985" y2="-16.51" width="0.127" layer="21"/>
 <wire x1="-6.985" y1="-16.51" x2="-6.985" y2="13.75" width="0.127" layer="21"/>
-<text x="1.27" y="-6.35" size="2.54" layer="51" rot="R90">8.8.8.8.</text>
 </package>
 </packages>
 <symbols>

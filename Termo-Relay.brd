@@ -66,11 +66,11 @@
 <wire x1="46.025" y1="0" x2="46.025" y2="52.06" width="0" layer="20"/>
 <wire x1="46.025" y1="52.06" x2="0" y2="52.06" width="0" layer="20"/>
 <wire x1="0" y1="52.06" x2="0" y2="0" width="0" layer="20"/>
-<text x="27.94" y="50.165" size="1.778" layer="51" font="vector" ratio="12">+</text>
-<text x="25.4" y="50.165" size="1.778" layer="51" font="vector" ratio="12">-</text>
-<text x="37.465" y="50.165" size="1.778" layer="51" font="vector" ratio="12">IN</text>
-<text x="33.02" y="50.165" size="1.778" layer="51" font="vector" ratio="12">-</text>
-<text x="35.56" y="50.165" size="1.778" layer="51" font="vector" ratio="12">-</text>
+<text x="27.94" y="50.165" size="1.778" layer="25" font="vector" ratio="12">+</text>
+<text x="25.4" y="50.165" size="1.778" layer="25" font="vector" ratio="12">-</text>
+<text x="37.465" y="50.165" size="1.778" layer="25" font="vector" ratio="12">IN</text>
+<text x="33.02" y="50.165" size="1.778" layer="25" font="vector" ratio="12">-</text>
+<text x="35.56" y="50.165" size="1.778" layer="25" font="vector" ratio="12">-</text>
 <text x="22.225" y="44.45" size="1.1" layer="25" font="vector" ratio="14" distance="25">Polyakov Konstantin,
 Russia, Yeysk, 2018-05-16</text>
 </plain>
